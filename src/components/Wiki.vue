@@ -14,7 +14,7 @@
       </div>
       <div>
         <a
-          href="https://en.wikipedia.org/wiki/Special:Random"
+          href="https://es.wikipedia.org/wiki/Special:Random"
           target="_blank"
           class="random-search btn btn-info"
         >Busqueda Aletoria</a>
@@ -39,14 +39,14 @@
 
 <script>
 const baseURL =
-  "https://en.wikipedia.org//w/api.php?action=query&format=json&prop=extracts%7Cdescription%7Cpageimages&generator=search&exchars=500&exlimit=20&exintro=1&explaintext=1&gsrnamespace=*&gsrlimit=10&gsrsearch=";
+  "https://es.wikipedia.org//w/api.php?action=query&format=json&prop=extracts%7Cdescription%7Cpageimages&generator=search&exchars=500&exlimit=20&exintro=1&explaintext=1&gsrnamespace=*&gsrlimit=10&gsrsearch=";
 
 export default {
   data() {
     return {
       uniqueSearch: "",
       articles: [],
-      page: "https://en.wikipedia.org/?curid="
+      page: "https://es.wikipedia.org/?curid="
     };
   },
   methods: {
@@ -99,14 +99,14 @@ p {
   padding: 0 15px 15px 15px;
 }
 .content {
+  list-style-type: none;
   padding: 2px 16px;
-  background-color: #0f4c75;
+  background: #0f4c75;
   margin: 10px;
 }
-li {
-  list-style-type: none;
-}
-li:hover {
+
+.content:hover {
+  background: #9EDDDF;
   border-left: 15px solid #1b262c;
   margin-left: -5px;
 }
